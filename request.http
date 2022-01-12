@@ -1,0 +1,32 @@
+
+@website = http://localhost:3000
+
+### GET
+
+GET {{website}}/hobbies
+
+### GET
+
+
+### POST
+POST {{website}}/hobbies/add
+Content-Type: application/json
+
+{
+     "name": "Dance",
+     "ifGroup": "true",
+     "limitAge": 4,
+      "address" :"studio"
+}
+
+### PUT
+PUT {{website}}/hobbies/update/swim
+Content-Type: application/json
+
+{
+    "limitAge" :7
+}
+
+### DELETE
+
+DELETE {{website}}/hobbies/delete/swim
